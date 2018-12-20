@@ -22,14 +22,21 @@ Running on Unix
 GUI
 ===
 There is a very simple interface that displays a welcome message if everything was installed correctly.
-If not, check that Graphviz is installed, ex: `dot` is in the `PATH`, and if there is `pyparsing.py` in `PYTHONPATH`.
+If not,
+check that Graphviz is installed,
+ex: `dot` is in the `PATH`,
+and if there is `pyparsing.py` in `PYTHONPATH`.
 
-Paste the SQL in the upper text entry, select the diagram generation algorith (or leave the default "fdp"),
+Paste the SQL in the upper text entry,
+select the diagram generation algorithm
+(or leave the default "fdp"),
 and press "Generate diagram".
 If edges are cluttered, increase the "distance" parameter.
-In case there are any problems due to the `dir.g` script, please use the "one-pass" algorithm, or use the command line.
+In case there are any problems due to the `dir.g` script,
+please use the "one-pass" algorithm, or use the command line.
 
-The generated diagram is in the file `current.gif`. You can also edit `current.dot` and run `dot` on top of it.
+The generated diagram is in the file `current.gif`.
+You can also edit `current.dot` and run `dot` on top of it.
 
 To run the tool:
 
@@ -37,17 +44,21 @@ To run the tool:
 
 Bugs and Limitations
 ====================
-Please qualify columns with aliases. Instead of "select a from table" use "select t.a from table t".
-This is trivial to fix for one table, however in general it does require access to the database.
-Instead of "Select name, id, dep_name from person inner join department..." use ""Select p.name, p.id, d.dep_name from person p inner join department d .."
+Please qualify columns with aliases.
+Instead of "select a from table" use "select t.a from table t".
+This is trivial to fix for one table,
+however in general it does require access to the database.
+Instead of "Select name, id, dep_name from person inner join department..."
+use ""Select p.name, p.id, d.dep_name from person p inner join department d .."
 
-Subselects are not fully working at this moment. For subselects use "one-pass".
+Subselects are not fully working at this moment.
+For subselects use "one-pass".
 
 
 Generating a diagram from standard input
 ========================================
 Command line parameter '-' will cause text to be read from standard input.
-Iy you paste directly text, end input with ^D (^Z on Windows)
+If you paste directly text, end input with ^D (^Z on Windows)
 
     python revj.py -
 
