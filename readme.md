@@ -76,7 +76,8 @@ Emden R. Gansner suggested to generate a graph, parse it and generate a new, dir
 
     python revj.py - | fdp | gvpr -fdir.g | dot -Grankdir=LR -Edir=none -T png -o current.png
 
-You might want to try several layout algorithms, since the graph layout varies wildly. Usually neato and fdp looks the best and are reliable.
+You might want to try several layout algorithms, since the graph layout varies wildly.
+Usually neato and fdp looks the best and are reliable.
 
     python revj.py vesel.sql | neato | .....
     python revj.py vesel.sql | circo | ...
