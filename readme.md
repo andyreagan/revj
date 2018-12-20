@@ -1,8 +1,8 @@
 Installation
 ============
-Install Graphviz (tested with ver 2.20)
-Install Python (tested with ver 2.4, 2.5 and 2.6)
-Install Pyparsing (tested with ver 1.4.5)
+- Install Graphviz (tested with ver 2.20)
+- Install Python (tested with ver 2.4, 2.5 and 2.6)
+- Install Pyparsing (tested with ver 1.4.5)
 
 
 Self-tests
